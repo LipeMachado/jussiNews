@@ -1,8 +1,25 @@
 import { createGlobalStyle } from "styled-components";
 
+import EinaBold700 from './Assets/Fonts/Eina/EinaBold700.ttf';
+import EinaRegular400 from './Assets/Fonts/Eina/EinaRegular400.ttf';
+
 export const GlobalStyle = createGlobalStyle`
+    @font-face {
+        font-family: EinaBold;
+        src: url(${EinaBold700});
+    }
+
+    @font-face {
+        font-family: EinaRegular;
+        src: url(${EinaRegular400});
+    }
+    
     :root {
         --background-website: #F4F9F8;
+        --blue-opacity: #2ff8681d;
+        --green: #00FF95;
+        --green-opacity: #2ff86814;
+        --amber-black: #072D4B;
     }
     
     * {
