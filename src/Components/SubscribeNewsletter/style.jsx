@@ -4,10 +4,13 @@ export const NewsletterContainerDiv = styled.div`
     background-color: var(--white);
     font-family: EinaRegular;
     font-weight: bold;
-    padding: 20px 30px;
+    padding: 20px 25px;
+    width: 250px;
     display: block;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+    border-radius: 4px;
 
     span {
         font-size: 13px;
