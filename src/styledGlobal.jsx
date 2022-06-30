@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     :root {
+        --white: #ffffff;
         --background-website: #F4F9F8;
         --blue-opacity: #2ff8681d;
         --green: #00FF95;

@@ -1,10 +1,13 @@
 import React from 'react';
 import {
-    MainContainerSection
+    MainContainerSection,
+    Aside
 } from './style.jsx';
 
 import { Header } from '../../Sections/MenuPageSections/Header/'
 import { Nav } from '../../Sections/MenuPageSections/Nav/'
+import { TopNews } from '../../Sections/MenuPageSections/TopNews/'
+import { SubscribeNewsletter } from '../../Components/SubscribeNewsletter/'
 
 export function InitialPage() {
     return (
@@ -12,12 +15,10 @@ export function InitialPage() {
             <Header />
             <MainContainerSection>
                 <Nav />
-                <div style={{ display: 'flex', justifyContent: 'center'}}>
-                    safkaskfm
-                </div>
-                <div>
-                    asjnfsagn
-                </div>
+                <TopNews />
+                <Aside>
+                    <SubscribeNewsletter />
+                </Aside>
             </MainContainerSection>
         </>
     )

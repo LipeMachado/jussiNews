@@ -6,3 +6,7 @@ export const MainContainerSection = styled.section`
     grid-template-rows: auto;
     margin-top: 25px;
 `;
+
+export const Aside = styled.aside`
+    
+`;
