@@ -18,6 +18,8 @@ export const GlobalStyle = createGlobalStyle`
         --background-website: #F4F9F8;
         --blue-opacity: #2ff8681d;
         --green: #00FF95;
+        --green-black: #219653;
+        --green-opacity-select-nav: #00ff9545;
         --green-opacity: #2ff86814;
         --amber-black: #072D4B;
     }

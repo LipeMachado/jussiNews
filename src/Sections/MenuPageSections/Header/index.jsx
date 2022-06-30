@@ -10,8 +10,8 @@ import {
 } from './style.jsx';
 import { MagnifyingGlass, User } from 'phosphor-react';
 
-import { Logo } from '../../Components/Logo';
-import { ArrowProfileMenu } from '../../Components/ArrowProfileMenu/'
+import { Logo } from '../../../Components/Logo/';
+import { ArrowProfileMenu } from '../../../Components/ArrowProfileMenu/'
 
 export function Header() {
 
