@@ -1,12 +1,13 @@
 import React from 'react';
 import {
-    TopNewsContainerSection
+    TopNewsContainerSection,
+    TopNewsTitleH1
 } from './style.jsx';
 
 export function TopNews() {
     return (
         <TopNewsContainerSection>
-            Top News
+            <TopNewsTitleH1>Top News for you</TopNewsTitleH1>
         </TopNewsContainerSection>
     );
 }
