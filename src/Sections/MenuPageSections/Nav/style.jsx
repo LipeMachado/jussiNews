@@ -5,7 +5,7 @@ export const NavContainerSection = styled.section`
 `;
 
 export const NavListContainerDiv = styled.div`
-    
+    width: 220px;
 `;
 
 export const NavListUl = styled.ul`
@@ -21,14 +21,17 @@ export const NavListUl = styled.ul`
             &:hover {
                 span {
                     opacity: 1;
+                    transition: all 0.2s ease-in-out;
                 }
 
                 svg {
                     color: var(--green-black);
+                    transition: all 0.2s ease-in-out;
                 }
 
                 h1 {
                     color: var(--green-black);
+                    transition: all 0.2s ease-in-out;
                 }
             }
             
@@ -49,6 +52,7 @@ export const NavListUl = styled.ul`
             background-color: var(--green-opacity-select-nav);
             border-top-right-radius: 37px;
             border-bottom-right-radius: 37px;
+            transition: all 0.3s ease-in-out;
             
             span {
                 opacity: 1;

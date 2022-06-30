@@ -2,11 +2,10 @@ import styled from "styled-components";
 
 export const NavBarHeader = styled.header`
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     height: 10vh;
     padding: 0 40px;
-    margin: 0 auto;
 `;
 
 export const LogoDiv = styled.div`
@@ -16,7 +15,7 @@ export const LogoDiv = styled.div`
 `;
 
 export const TextLogoDiv = styled.div`
-
+    /* white-space: nowrap; */
 `;
 
 export const TextLogoH1 = styled.h1`
