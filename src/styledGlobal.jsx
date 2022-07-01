@@ -38,5 +38,6 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         background-color: var(--background-website);
+        font-family: Roboto, sans-serif;
     }
 `;

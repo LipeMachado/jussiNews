@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const TopNewsContainerSection = styled.section`
-    display: flex;
+    display: block;
 `;
 
 export const TopNewsTitleH1 = styled.h1`
