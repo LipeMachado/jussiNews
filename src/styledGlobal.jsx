@@ -25,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
         --green-opacity: #2ff86814;
         --amber-black: #072D4B;
         --gray: #F4F9F8;
+        --color-separator: #c9c9c962;
     }
     
     * {

@@ -6,6 +6,7 @@ export const NavBarHeader = styled.header`
     justify-content: space-between;
     height: 10vh;
     padding: 0 40px;
+    border-bottom: 1px solid var(--color-separator);
 `;
 
 export const LogoDiv = styled.div`

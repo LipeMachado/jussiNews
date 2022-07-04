@@ -5,7 +5,7 @@ export const NewsletterContainerDiv = styled.div`
     font-family: EinaRegular;
     font-weight: bold;
     padding: 20px 25px;
-    width: 250px;
+    width: 200px;
     display: block;
     align-items: center;
     justify-content: center;
@@ -23,12 +23,12 @@ export const NewsletterContainerDiv = styled.div`
         font-family: EinaRegular;
         border-radius: 4px;
         border: none;
-        width: 230px;
-        height: 38px;
+        width: 187px;
+        height: 30px;
         margin: 13px 0 13px 0;
         padding: 0 0 0 14px;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 18px;
         background-color: var(--gray);
 
@@ -40,7 +40,7 @@ export const NewsletterContainerDiv = styled.div`
 
     button {
         font-family: EinaRegular;
-        width: 244px;
+        width: 202px;
         height: 38px;
         border-radius: 4px;
         border: none;
