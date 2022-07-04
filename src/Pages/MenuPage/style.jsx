@@ -7,5 +7,5 @@ export const MainContainerSection = styled.section`
 `;
 
 export const Aside = styled.aside`
-    padding: 0 30px 0 0;
+    margin-right: 30px;
 `;

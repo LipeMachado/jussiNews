@@ -14,14 +14,14 @@ export function ArrowProfileMenu(props){
     };
 
     return (
-        <ArrowProfileContainerMenuDiv onClick={SwitchMode}>
+        <ArrowProfileContainerMenuDiv onClick={() => { SwitchMode(); props.onClick(); }}>
             <MyProfileTextH2>
                 {props.text}
             </MyProfileTextH2>
 
             <ArrowProfileContainerDiv style={{
-                transform: active ? "rotate(225deg)" : "rotate(135deg)",
-                marginBottom: active ? "2px" : "7px"
+                transform: active ? "rotate(135deg)" : "rotate(225deg)",
+                marginBottom: active ? "7px" : "2px"
             }} />
         </ArrowProfileContainerMenuDiv>
     );

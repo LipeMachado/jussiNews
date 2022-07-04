@@ -4,13 +4,13 @@ export const ArrowProfileContainerMenuDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 `;
 
 export const MyProfileTextH2 = styled.h2`
     font-family: EinaRegular;
     font-size: 15px;
     margin-right: 10px;
-    cursor: pointer;
 `;
 
 export const ArrowProfileContainerDiv = styled.div`

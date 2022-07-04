@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import {
     NavBarHeader,
     LogoDiv,
@@ -10,10 +10,22 @@ import {
 } from './style.jsx';
 import { MagnifyingGlass, User } from 'phosphor-react';
 
-import { Logo } from '../../../Components/Logo/';
+import { Logo } from '../../../Components/Logo/'
 import { ArrowProfileMenu } from '../../../Components/ArrowProfileMenu/'
+import { ProfileMenu } from '../ProfileMenu/'
+import { UseClickOutside } from '../../../Components/UseClickOutside/'
 
 export function Header() {
+
+    const [openMenu, setOpenMenu] = useState(false);
+
+    const ToggleOpenMenu = () => {
+        setOpenMenu(!openMenu);
+    }
+
+    const ContainerProfileMenu = useRef(null);
+
+    UseClickOutside(ContainerProfileMenu, () => setOpenMenu(false));
 
     return (
         <NavBarHeader>
@@ -29,8 +41,9 @@ export function Header() {
             </SearchDiv>
             <ProfileDiv>
                 <User size={24} />
-                <MyProfileDiv>
-                    <ArrowProfileMenu text="My Profile" />
+                <MyProfileDiv ref={ContainerProfileMenu}>
+                    <ArrowProfileMenu text="My Profile" onClick={() => ToggleOpenMenu()} />
+                    <ProfileMenu className={openMenu ? 'active' : 'disable'}/>
                 </MyProfileDiv>
             </ProfileDiv>
         </NavBarHeader>
