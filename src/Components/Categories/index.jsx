@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { 
     CategoriesContainerSection,
     CategoriesDiv
-} from './styled.jsx';
+} from './style.jsx';
+
+import { ArrowCircleRight } from 'phosphor-react';
 
 export function Categories() {
     const [categoryActive, setCategoryActive] = useState('All');
@@ -20,6 +22,7 @@ export function Categories() {
             <CategoriesDiv onClick={() => ActiveCategoriy('Google')} className={categoryActive === 'Google' ? 'active' : 'disable'}>Google</CategoriesDiv>
             <CategoriesDiv onClick={() => ActiveCategoriy('NanoTechnology')} className={categoryActive === 'NanoTechnology' ? 'active' : 'disable'}>Nano Technology</CategoriesDiv>
             <CategoriesDiv onClick={() => ActiveCategoriy('MentalHealth')} className={categoryActive === 'MentalHealth' ? 'active' : 'disable'}>Mental Health</CategoriesDiv>
+            <ArrowCircleRight size={24} />
         </CategoriesContainerSection>
     );
 } 

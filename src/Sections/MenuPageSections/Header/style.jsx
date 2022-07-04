@@ -27,6 +27,7 @@ export const TextLogoH1 = styled.h1`
 
 export const SearchDiv = styled.div`
     position: relative;
+    margin-right: 100px;
 
     input {
         font-family: EinaRegular;
