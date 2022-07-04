@@ -41,4 +41,15 @@ export const GlobalStyle = createGlobalStyle`
         background-color: var(--background-website);
         font-family: Roboto, sans-serif;
     }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: var(--green-opacity-select-nav);
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--green-hover-button);
+        border-radius: 8px;
+    }
 `;
