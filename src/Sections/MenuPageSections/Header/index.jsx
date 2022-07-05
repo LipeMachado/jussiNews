@@ -20,7 +20,6 @@ export function Header() {
     const [openMenu, setOpenMenu] = useState(false);
 
     const ContainerProfileMenu = useRef(null);
-
     UseClickOutside(ContainerProfileMenu, () => setOpenMenu(false));
 
     return (
