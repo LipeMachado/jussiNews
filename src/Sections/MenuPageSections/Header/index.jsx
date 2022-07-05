@@ -19,10 +19,6 @@ export function Header() {
 
     const [openMenu, setOpenMenu] = useState(false);
 
-    const ToggleOpenMenu = () => {
-        setOpenMenu(!openMenu);
-    }
-
     const ContainerProfileMenu = useRef(null);
 
     UseClickOutside(ContainerProfileMenu, () => setOpenMenu(false));
@@ -42,7 +38,7 @@ export function Header() {
             <ProfileDiv>
                 <User size={24} />
                 <MyProfileDiv ref={ContainerProfileMenu}>
-                    <ArrowProfileMenu text="My Profile" onClick={() => ToggleOpenMenu()} />
+                    <ArrowProfileMenu text="My Profile" onClick={() => { setOpenMenu(!openMenu) }} />
                     <ProfileMenu className={openMenu ? 'active' : 'disable'}/>
                 </MyProfileDiv>
             </ProfileDiv>
